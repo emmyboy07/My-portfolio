@@ -2,7 +2,7 @@
 
 A responsive student portfolio and academic management website — built for COS 106 (Introduction to Web Technologies) at MIVA Open University.
 
-**Live site:** https://emmyboy07.github.io/My-portfolio/
+**Live site:** https://my-portfolio-link-ten.vercel.app/
 
 ## Pages
 
