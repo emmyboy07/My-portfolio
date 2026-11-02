@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academic Planner | Anakwe Tochukwu Emmanuel</title>
+  <meta name="description" content="Interactive academic planner to add, complete, and delete tasks." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">ATE</span>
+        <span>Anakwe Tochukwu Emmanuel</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Academic Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">Academic Planner</h1>
+        <p class="section-subtitle">Keeping track of assignments, deadlines, and coursework.</p>
+
+        <div class="planner-panel">
+          <form id="task-form" class="planner-form">
+            <label for="task-title" class="sr-only">Task title</label>
+            <input type="text" id="task-title" name="task-title" placeholder="e.g. Submit COS 106 term project" required />
+
+            <label for="task-due" class="sr-only">Due date</label>
+            <input type="date" id="task-due" name="task-due" />
+
+            <button type="submit" class="btn btn-accent">Add Task</button>
+          </form>
+
+          <div class="planner-stats">
+            <p>Total: <span id="total-count">0</span></p>
+            <p>Completed: <span id="completed-count">0</span></p>
+            <p>Pending: <span id="pending-count">0</span></p>
+          </div>
+
+          <ul id="task-list"></ul>
+          <p id="empty-state" class="empty-state">No tasks yet — add your first task above!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Anakwe Tochukwu Emmanuel. Built for COS 106 — Introduction to Web Technologies.</p>
+      <p><a href="https://github.com/emmyboy07" target="_blank" rel="noopener">GitHub</a> &middot; <a href="mailto:a.emmanuel1890@miva.edu.ng">a.emmanuel1890@miva.edu.ng</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/planner.js"></script>
+</body>
+</html>
